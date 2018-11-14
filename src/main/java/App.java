@@ -16,6 +16,6 @@ public class App {
 
     public static void main (String[] args) {
         BasicConfigurator.configure();
-        get("/", (request, response) -> "Hello Maven!");
+        get("/", (request, response) -> "Hello Maven! Am the best baby!!");
     }
 }
