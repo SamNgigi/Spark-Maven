@@ -16,6 +16,7 @@ public class App {
 
     public static void main (String[] args) {
         BasicConfigurator.configure();
+        port(getHerokuAssignedPort());
         get("/", (request, response) -> "Hello Maven! Am the best baby!!");
     }
 }

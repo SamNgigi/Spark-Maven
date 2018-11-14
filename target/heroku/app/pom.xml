@@ -77,7 +77,7 @@
                     <!--  Application  -->
                     <appName>spark-maven</appName>
                     <processType>
-                        <web>java -jar ./target/maven-spark-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar ./target/maven-spark-1.0-SNAPSHOT-jar-with-dependencies.jar</web>
                     </processType>
                 </configuration>
             </plugin>
