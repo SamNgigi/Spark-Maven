@@ -38,6 +38,12 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <!--  Maven DebugScreen  -->
+        <dependency>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-debug-tools</artifactId>
+            <version>0.5</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -94,9 +100,9 @@
                     <jdkVersion>1.8</jdkVersion>
                     <!--  Application  -->
                     <appName>spark-maven</appName>
-                    <processType>
+                    <!--<processType>
                         <web>java -jar ./target/maven-spark-1.0-SNAPSHOT-jar-with-dependencies.jar</web>
-                    </processType>
+                    </processType>-->
                 </configuration>
             </plugin>
         </plugins>

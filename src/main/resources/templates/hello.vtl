@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Hello Velocity</title>
+    <meta charset="UTF-8">
+    <title>#1</title>
 </head>
 <body>
-    <h1>This is a test</h1>
-    <p>Hope this velocity template thing is working! Adding this <a>link</a> For added testing.</p>
-    <p>Hello Maven! I am the best that ever was and will be!! I am plethorically blessed! I am so happy and so very grateful for the fact fact that I am now earning $1 million a second.</p>
+    <h2>$testing</h2>
+    <p>I am the best. The best engineer and problem solver in the world. Ever been and ever to be.</p>
+    <p>I am super blessed and I am so happy and so very grateful for the fact that I am now earning $1 million every second</p>
+    <ul>
+        #foreach ($item in $my_data.entrySet())
+            <li>$item.key: $item.value</li>
+        #end
+        ## This is a single line comment in vtl. **
+        #**
+            This is a multi line comment. We get a ParseExceptionError when we use incorrect
+            syntax in the templates.
+        *#
+    </ul>
 </body>
 </html>
