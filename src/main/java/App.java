@@ -36,6 +36,6 @@ public class App {
         get("/", (request, response) ->{
             return new ModelAndView(new HashMap(), "templates/hello.vtl");
         }, new VelocityTemplateEngine());
-       /* get("/", (request, response) -> "Hello Maven!\nI am the best that ever was and will be!!\nI am plethorically blessed!\nI am so happy and so very grateful for the fact fact that I am now earning $1 million a second.");*/
+       
     }
 }
