@@ -18,5 +18,13 @@
             syntax in the templates.
         *#
     </ul>
+    ## Our form **
+    <form method="post" enctype="multipart/form-data">
+        <Label>Add a pic</Label>
+        <input type="file" name="uploaded_file" placeholder="Add a pic">
+        <button>Upload</button>
+    </form>
+
+    <h4>You have uploaded this image: </h4> <img src=$pic_path/>
 </body>
 </html>

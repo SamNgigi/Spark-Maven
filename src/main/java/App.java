@@ -68,7 +68,7 @@ public class App {
         File upload_dir = new File("upload");
         upload_dir.mkdir(); // create the upload directory if it doesn't exist
 
-        staticFiles.externalLocation("uploads");
+        staticFiles.externalLocation("upload");
 
         get("/", (request, response) ->{
 
